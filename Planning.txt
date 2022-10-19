@@ -1,0 +1,45 @@
+FineHubs -->
+            1. Frontend -->
+                            1. Pages -->
+                                        1. Home -->
+                                        2. Profile -->
+                                        3. Product -->
+                                        4. Checkout -->
+
+                            2. Layout -->
+                                        1. Default
+                                        2. Product
+                                        3. Profile
+                                        4. Checkout
+
+                            3. HOC --> 
+                                        1. Default
+                                        2. Product
+                                        3. Profile
+                                        4. Checkout
+
+
+
+            2. Backend -->
+                            1. Routes -->
+                                            1. Public --> 
+                                                        1. HomePage
+                                                        2. Detail of the Product (All About)
+                                                        3. Read Reviews Reviews
+                                                        4. Images which is uploaded by any user or reviews image
+                                                        5. Connect with support team
+                                                        6. SignUp
+                                                        7. SignIn
+                                                        8. Add to cart
+
+
+                                            2. Private --> 
+                                                        1. Profile
+                                                        2. Rate Reviews
+                                                        3. Update Profile
+                                                        4. Buy Product
+                                                        5. Payment
+                                                        6. Uploaded images of the product
+                                                        7. Billing information
+                                                        8. Update order by gmail and mobile and someother platform
+

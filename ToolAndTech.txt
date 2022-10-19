@@ -1,0 +1,23 @@
+Tool -->
+        1. Postman
+        2. MongoDB
+        3. 
+
+
+
+
+Technology -->
+            
+            1. --> Front-end
+                1. ReactJs  --> JSX
+                2. TailwindCss --> CSS framework
+
+            2. --> Back-end
+                1. NodeJS
+                2. Express
+                3. MongoDB
+                4. AWS
+
+            3. --> Others
+                1. Git and Github
+                2. Godaddy
