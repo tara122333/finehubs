@@ -1,1 +1,1 @@
-console.log("dlnsd");
+npm install @babel/present-env @babel/cli @babel/node --svae-dev
