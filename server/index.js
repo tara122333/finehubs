@@ -1,4 +1,6 @@
+import './database/connection';  // database connection 
 import express from 'express';
+import { UserModel } from './database/user';
 
 const app = express();
 
