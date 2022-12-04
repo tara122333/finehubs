@@ -21,7 +21,7 @@ const UserSchema = new mongoose.Schema({
                 type: String,
             },
             for: {
-                type: String
+                type: String,
             }
         },
     ],
@@ -37,5 +37,24 @@ const UserSchema = new mongoose.Schema({
         timestamps: true
     });
 
+
+UserSchema.statics.findByMobileAndEmail = async({email,phoneNumber}) =>{
+    const findEmail = await UserModel.findOne({email});
+    const findPhone = await UserModel.findOne({phoneNumber});
+    if(findEmail || findPhone){
+        throw new Error("User already Exist!!!!!");
+    }
+    return false;
+}
+
+UserSchema.statics.findByEmailAndPassword = async({email,password}) => {
+    const findEmail = await UserModel.findOne({email});
+    if(!findEmail) throw new Error("user not found"); 
+    
+    const isMatch = await UserModel.findOne(password,findEmail.password);
+    if(!isMatch) throw new Error("password not matches");
+    
+    return findEmail;
+}
 
 export const UserModel = mongoose.model("user",UserSchema);
