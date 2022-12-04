@@ -1,11 +1,16 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar';
+
 
 const Home = () => {
   return (
-    <div>This is Home page
+    <>
+      <Navbar />
+      <div className='my-12'>
+        <h1 className='text-red-500 bg-red-200 text-2xl'>Also heading is included</h1>
+      </div>
+    </>
 
-      <h1 className='text-red-500 bg-red-200 text-2xl'>Also heading is included</h1>
-    </div>
   )
 }
 
