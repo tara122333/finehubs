@@ -70,12 +70,13 @@ const NavbarLG = ({SignIn,SignUp})=>{
 const Navbar = () => {
 
   const [openSignin, setOpenSignin] = useState(false);
+
   const openSignInmodal = () => setOpenSignin(true);
 
   return (
     <>
 
-      <SignIn isOpen={openSignin} setIsOpen={openSignInmodal} />
+      <SignIn isOpen={openSignin} setIsOpen={setOpenSignin} />
 
 
       {/* Navbar for mobile */}
