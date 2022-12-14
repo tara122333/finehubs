@@ -21,14 +21,38 @@ Router.post("/signin",async(req,res)=>{
     }
 });
 
+// Router.post("/signup",async(req,res)=>{
+//     try {
+//         const data = await req.body.credentials;
+//         const findUserEmail = await UserModel.findOne({email}); 
+//     } catch (error) {
+//         return res.status(500).json({ error: error.message });
+//     }
+// });
+
+
+/* 
+route      ==> /signup
+method     ==> POST
+Des        ==> signup using email Id, password, and Name
+params     ==> none
+Access     ==> public
+*/
+
 Router.post("/signup",async(req,res)=>{
-    try {
-        const data = await req.body.credentials;
-        const findUserEmail = await UserModel.findOne({email}); 
-    } catch (error) {
-        return res.status(500).json({ error: error.message });
+    try{
+        // const data = await req.body.credentials;
+        await UserModel.findByMobileAndEmail(req.body.credentials);
+        const newUser = await UserModel.create(req.body.credentials);
+        return res.status(201).json({
+            message : "user added successfully",status:"success"
+        });
+
+    }catch(error){
+        return res.status(500).json({error : error.message});
     }
 });
+
 
 
 

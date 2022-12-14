@@ -20,6 +20,13 @@ FineHubs -->
 
 
 
+
+
+
+
+
+
+
             2. Backend -->
                             1. Routes -->
                                             1. Public --> 
@@ -43,3 +50,15 @@ FineHubs -->
                                                         7. Billing information
                                                         8. Update order by gmail and mobile and someother platform
 
+
+
+                Login -->  1. using Google or email varification.
+                           2. using Mobile Number.
+                           3. using Email and password.
+
+
+                Signup --> 1. using Google or email
+                           2. using mobile Number
+                           3. using email,Name,password.
+
+                
