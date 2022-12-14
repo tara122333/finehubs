@@ -1,4 +1,4 @@
-import './database/connection';  // database connection 
+import './database/connection';  // database connection
 import express from 'express';
 
 const app = express();

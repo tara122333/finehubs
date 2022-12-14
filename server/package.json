@@ -15,7 +15,9 @@
     "@babel/node": "^7.19.1",
     "@babel/preset-env": "^7.19.4",
     "express": "^4.18.2",
-    "mongoose": "^6.6.7"
+    "mongoose": "^6.6.7",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6"
